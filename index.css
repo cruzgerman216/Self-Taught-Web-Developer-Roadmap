@@ -19,8 +19,7 @@
   text-align: center;
   color: #818181;
 }
-.series button {
-}
+
 .series a,
 .dropdown-btn {
   padding: 6px 8px 6px 16px;
@@ -35,4 +34,26 @@
   cursor: pointer;
   outline: none;
   text-align: center;
+}
+
+.subseries .img {
+  width: 100%;
+  border: 2px solid rgb(194, 192, 212);
+}
+
+.subseries .card p {
+  padding: 20px 5px;
+  max-width: 450px;
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 20px;
+  border: 2px solid rgb(194, 192, 212);
+}
+.subseries .card p {
+  text-align: center;
+}
+
+.subseries img:hover {
+  border: 2px solid rgb(165, 162, 190);
+  opacity: 0.3;
 }
