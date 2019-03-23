@@ -15,31 +15,31 @@
 
       .topnav {
         overflow: hidden;
-        background-color: #333;
+        background-color: rgb(223, 210, 210);
       }
 
       .lfloat {
         float: left;
         display: block;
-        color: #f2f2f2;
+        color: #8b8b8b;
         text-align: center;
-        padding: 14px 16px;
+        padding: 5px 16px;
         text-decoration: none;
         font-size: 17px;
       }
       .rfloat {
         float: right;
         display: block;
-        color: #f2f2f2;
+        color: #8b8b8b;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
+        padding: 5px 16px;
         font-size: 17px;
       }
       .topnav a rfloat {
         float: right;
         display: block;
-        color: #f2f2f2;
+        color: #8b8b8b;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -89,9 +89,8 @@
 
       .topnav a:hover,
       .dropdown:hover .dropbtn {
-        background-color: #555;
+        background-color: rgb(168, 161, 161);
         color: white;
-        border-bottom: 3px solid rgb(202, 196, 196);
       }
 
       .dropdown-content a:hover {
@@ -147,14 +146,74 @@
           display: block;
           margin: 0;
         }
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+          border-bottom: none;
+        }
+      }
+      .center {
+        text-align: center;
+        margin: 0px auto;
+        width: 75%;
+      }
+      .center p {
+        padding: 20px;
+        background-color: #e7e0e0;
+        border-radius: 20px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .center {
+          width: 90%;
+        }
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        grid-gap: 20px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+        min-height: 0;
+        min-width: 0;
+      }
+      .grid-item img {
+        width: 100%;
+        max-width: 400px;
+      }
+      @media screen and (max-width: 750px) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto;
+          padding: 10px;
+          grid-gap: 20px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto;
+          padding: 10px;
+          grid-gap: 20px;
+        }
+      }
+
+      h1 {
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
+    <!--TOP Navigation-->
     <div class="topnav" id="myTopnav">
       <a class="lfloat" href="#home" class="active">Home</a>
-      <a class="lfloat" href="#news">News</a>
+      <a class="lfloat" href="#news">About</a>
       <a class="lfloat" href="#contact">Contact</a>
+      <!-- 
       <div class="dropdown ">
         <button class="dropbtn lfloat">
           Dropdown
@@ -165,9 +224,8 @@
           <a class="" href="#">Link 2</a>
           <a class="" href="#">Link 3</a>
         </div>
-      </div>
-      <a class="lfloat" href="#about">About</a>
-      <a class="rfloat"> test</a>
+      </div>-->
+      <a class="rfloat"> Forum</a>
       <a
         href="javascript:void(0);"
         style="font-size:15px;"
@@ -175,6 +233,62 @@
         onclick="myFunction()"
         >&#9776;</a
       >
+    </div>
+
+    <div class="center">
+      <p>
+        Hello everyone! Welcome to the beginners roadmap to Web Development!
+        There are three paths into making you a web developer. There are courses
+        provided with a link in the far left that will make you into a very good
+        programmer. In the middle is a link to programmers advice that includes
+        Traversy Media, Joshua Fluke, Dylan Israel and more. In the right hand
+        side, there are tips and advice that will help you land your first job.
+        Let's get the ball rolling and keep up that grind!
+      </p>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <h1>Web Development Roadmap</h1>
+        <img src="photoshopimages/more html courses click.png" />
+        <p>
+          Hello everyone! Welcome to the beginners roadmap to Web Development!
+          There are three paths into making you a web developer. There are
+          courses provided with a link in the far left that will make you into a
+          very good programmer. In the middle is a link to programmers advice
+          that includes Traversy Media, Joshua Fluke, Dylan Israel and more. In
+          the right hand side, there are tips and advice that will help you land
+          your first job. Let's get the ball rolling and keep up that grind!
+        </p>
+      </div>
+      <div class="grid-item">
+        <h1>Programming Advice</h1>
+
+        <img src="photoshopimages/more html courses click.png" />
+        <p>
+          Hello everyone! Welcome to the beginners roadmap to Web Development!
+          There are three paths into making you a web developer. There are
+          courses provided with a link in the far left that will make you into a
+          very good programmer. In the middle is a link to programmers advice
+          that includes Traversy Media, Joshua Fluke, Dylan Israel and more. In
+          the right hand side, there are tips and advice that will help you land
+          your first job. Let's get the ball rolling and keep up that grind!
+        </p>
+      </div>
+      <div class="grid-item">
+        <h1>Job Help Resources</h1>
+
+        <img src="photoshopimages/more html courses click.png" />
+        <p>
+          Hello everyone! Welcome to the beginners roadmap to Web Development!
+          There are three paths into making you a web developer. There are
+          courses provided with a link in the far left that will make you into a
+          very good programmer. In the middle is a link to programmers advice
+          that includes Traversy Media, Joshua Fluke, Dylan Israel and more. In
+          the right hand side, there are tips and advice that will help you land
+          your first job. Let's get the ball rolling and keep up that grind!
+        </p>
+      </div>
     </div>
 
     <script>
