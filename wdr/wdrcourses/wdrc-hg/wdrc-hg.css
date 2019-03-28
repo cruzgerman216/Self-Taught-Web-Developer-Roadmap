@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: rgba(241, 237, 237, 0.788);
   padding: 0;
 }
 body {
   margin: 0;
+  background-color: rgba(241, 237, 237, 0.788);
   font-family: Arial;
 }
 
@@ -341,7 +341,7 @@ img:hover {
     grid-gap: 20px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 505px) {
   .grid-container5 {
     display: grid;
     grid-template-columns: auto;
@@ -359,11 +359,7 @@ img:hover {
   margin: 0px auto;
   width: 75%;
 }
-.center p {
-  padding: 20px;
-  background-color: #e7e0e0;
-  border-radius: 20px;
-}
+
 .lefthand {
   width: 40%;
   margin: 0 auto;
@@ -397,4 +393,47 @@ img:hover {
 
 .color {
   color: #818181;
+}
+
+.greyb {
+  background-color: #e7e0e0;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+.greyb p {
+  line-height: 2;
+}
+
+.greyb h3 {
+  margin: 20px 0;
+}
+
+h1 {
+  margin: 25px 0 15px 0;
+}
+
+a {
+  color: rgb(90, 24, 76);
+}
+
+.grid-item h3 {
+  margin: 5px 0 0 0;
+}
+
+.center-buttons-pbn {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+.prevbutton {
+  width: 13.33%;
+  margin: 10%;
+  padding: 10px 0 0 0;
+  background-color: rgb(87, 82, 82);
+  border: solid 1px black;
+  border-radius: 10px;
+  height: 40px;
+  float: left;
 }
